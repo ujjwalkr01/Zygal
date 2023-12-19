@@ -9,15 +9,18 @@ btn.addEventListener("click", () => {
 
   let widthVal = width / inpt.value;
   let heightVal = height / inpt.value;
- 
-  creating2dMatrix()
+
+  //function for creating the  2d Matrix
+  creating2dMatrix(widthVal, heightVal, inpt.value);
 });
 
-function creating2dMatrix() {
-  for (let i = 1; i <= inpt.value; i++) {
+function creating2dMatrix(widthVal, heightVal, n) {
+  for (let i = 1; i <= n; i++) {
+    //function for creating the parentDiv
     createParentDiv(i, heightVal);
-    for (let j = 1; j <= inpt.value; j++) {
-      if (j == inpt.value - i + 1) {
+    for (let j = 1; j <= n; j++) {
+      //condition for creating the child div and highlighting the bgColor as black
+      if (j == n - i + 1) {
         createChildDiv(i, widthVal, "black");
       } else {
         createChildDiv(i, widthVal);
