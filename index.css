@@ -1,6 +1,15 @@
 #parentDiv {
+  margin-top: 1%;
   width: 100%;
   height: 100vh;
   background-color: white;
   border: 1px solid black;
+}
+#btn {
+  background-color: rgb(33, 162, 248);
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5%;
+  font-weight: 600;
 }
